@@ -1,0 +1,17 @@
+# Example configuration file
+# Copy this to application.properties and fill in your actual values
+
+spring.application.name=springbootapp2
+server.port=8888
+
+# MongoDB Configuration
+# Replace with your actual MongoDB connection string
+spring.data.mongodb.uri=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<database>?retryWrites=true&w=majority
+
+# JWT Configuration
+# Generate a secure random string for jwt.secret (minimum 256 bits for HS256)
+jwt.secret=YOUR_SECURE_JWT_SECRET_KEY_HERE
+jwt.expiration=86400000
+
+# Admin Secret Key for admin registration
+app.admin.secret.key=YOUR_ADMIN_SECRET_KEY_HERE
